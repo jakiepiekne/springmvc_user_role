@@ -3,14 +3,33 @@ package com.springmvc.learning.models;
 import com.springmvc.learning.validation.PasswordValid;
 import com.springmvc.learning.validation.UniqueEmail;
 import com.springmvc.learning.validation.UniqueUsername;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
-import javax.validation.constraints.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
-import static com.springmvc.learning.constants.ValidationConstants.*;
+import static com.springmvc.learning.constants.ValidationConstants.FIRST_LAST_NAME_PATTERN;
+import static com.springmvc.learning.constants.ValidationConstants.USERNAME_PATTERN;
 
 
 @Entity

@@ -1,7 +1,6 @@
 package com.springmvc.learning.constants;
 
 public class ValidationConstants {
-
     public static final String FIRST_LAST_NAME_PATTERN = "(?i)(^[a-zA-Zàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûśüųūÿýżźñçčšž" +
             "ÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹŚÑßÇŒÆČŠŽ∂ð])((?![ .,'-]$)" +
             "[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýśżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹŚÑßÇŒÆČŠŽ∂ð ,.'-])" +

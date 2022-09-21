@@ -14,6 +14,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import java.util.Properties;
 
+import static com.springmvc.learning.constants.HibernateSettingsConstants.HIBERNATE_DIALECT;
+import static com.springmvc.learning.constants.HibernateSettingsConstants.SHOW_SQL;
+import static com.springmvc.learning.constants.HibernateSettingsConstants.HBM2DDL_AUTO;
+import static com.springmvc.learning.constants.HibernateSettingsConstants.VALIDATION_MODE;
+
 @Configuration
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
@@ -36,10 +41,10 @@ public class HibernateConfig {
 
     private Properties hibernateSettings() {
         Properties settings = new Properties();
-        settings.put("hibernate.dialect", environment.getProperty("MYSQL_DIALECT"));
-        settings.put("hibernate.show_sql", environment.getProperty("SHOW_SQL"));
-        settings.put("hibernate.hbm2ddl.auto", environment.getProperty("HIBERNATE.HBM2DDL.AUTO"));
-        settings.put("javax.persistence.validation.mode", environment.getProperty("VALIDATION_MODE"));
+        settings.put(HIBERNATE_DIALECT, environment.getProperty("MYSQL_DIALECT"));
+        settings.put(SHOW_SQL, environment.getProperty("SHOW_SQL"));
+        settings.put(HBM2DDL_AUTO, environment.getProperty("HIBERNATE.HBM2DDL.AUTO"));
+        settings.put(VALIDATION_MODE, environment.getProperty("VALIDATION_MODE"));
         return settings;
     }
 
