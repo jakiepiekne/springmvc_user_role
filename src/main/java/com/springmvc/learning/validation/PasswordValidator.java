@@ -36,6 +36,8 @@ public class PasswordValidator implements ConstraintValidator<PasswordValid, Use
                     context.buildConstraintViolationWithTemplate(PASSWORD_EQUALITY_VIOLATION)
                             .addConstraintViolation();
                     return false;
+                } else {
+                    return true;
                 }
 
             } else {
