@@ -19,7 +19,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/user/**").hasRole("USER")
-                .and().formLogin()
+                .and().formLogin().loginPage("/login").loginProcessingUrl("/login")
                 .successHandler(new CustomAuthenticationHandler()).permitAll()
                 .and().logout().logoutUrl("/logout")
                 .invalidateHttpSession(true).clearAuthentication(true)
