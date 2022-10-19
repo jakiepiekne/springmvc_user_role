@@ -12,7 +12,7 @@
         <spring.mvc.version>5.2.6.RELEASE</spring.mvc.version>
         <spring.version>5.3.22</spring.version>
 
-        <javax.servlet.api.vercion>4.0.0</javax.servlet.api.vercion>
+        <javax.servlet.api.version>4.0.1</javax.servlet.api.version>
         <javax.annotation.api>1.3.2</javax.annotation.api>
 
         <hibernate.core.version>5.4.24.Final</hibernate.core.version>
@@ -36,6 +36,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.1</version>
+                <configuration>
+                    <warName>ROOT</warName>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -100,7 +103,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>${javax.servlet.api.vercion}</version>
+            <version>${javax.servlet.api.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -171,4 +174,3 @@
         </dependency>
     </dependencies>
 </project>
-
