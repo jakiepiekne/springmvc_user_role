@@ -4,6 +4,11 @@ There are two roles: ADMIN and USER. After a successful login, the user will be 
 
 ADMINs can ADD new users, EDIT and DELETE existing ones. The data passed into EDIT/ADD form is validated on back-end.
 
+# How to test application
+1) Clone repository `https://github.com/jakiepiekne/springmvc_user_role.git`
+
+2) From the project directory, start up application by running `docker compose up`
+
 ## Technology stack
 #### front-end:
 <ul>                                                                 
