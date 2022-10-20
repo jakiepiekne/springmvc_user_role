@@ -7,7 +7,9 @@ ADMINs can ADD new users, EDIT and DELETE existing ones. The data passed into ED
 # How to test application
 1) Clone repository `https://github.com/jakiepiekne/springmvc_user_role.git`
 
-2) From the project directory, start up application by running `docker compose up`
+2) From the project directory, start up application by running `docker-compose up`
+
+3) Go to `localhost:8080`
 
 ## Technology stack
 #### front-end:
