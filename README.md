@@ -11,6 +11,16 @@ ADMINs can ADD new users, EDIT and DELETE existing ones. The data passed into ED
 
 3) Go to `localhost:8080`
 
+Admin access: 
+```
+       login: admin
+       password: password
+```
+   User access:
+```
+       login: user
+       password: password
+```
 ## Technology stack
 #### front-end:
 <ul>                                                                 
